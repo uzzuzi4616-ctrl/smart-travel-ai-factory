@@ -1,0 +1,13 @@
+/* v36.1: All workspace pages dark, including Music AI. */
+:root{color-scheme:dark}
+html,body{background-color:#0b0c10!important;color:#f5f5fa!important;min-height:100%}
+body .layout,body .main,body main.main,body .stage,body .content,body .top,body .footer{background-color:#0b0c10!important;color:#f5f5fa!important}
+body .side{background-color:#101116!important;color:#f5f5fa!important;border-color:#30323d!important}
+body .brand,body h1,body h2,body h3,body label{color:#f5f5fa!important}
+body p,body .footer{color:#aeb2c4!important}
+body .prompt,body .notice{background:#1b1b23!important;color:#e8e5ef!important;border-color:#393746!important}
+body textarea,body input,body select{background-color:#22222c!important;color:#fff!important;border-color:#4c4b59!important}
+body textarea::placeholder,body input::placeholder{color:#9c9baa!important}
+body .badge{background:#362817!important;color:#ffd596!important}
+body #smart-language-widget{background:#222632!important;color:#fff!important}
+body #smart-language-widget select{background:#141823!important;color:#fff!important}
