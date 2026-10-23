@@ -1,0 +1,25 @@
+/* Premium dark restoration for the ORIGINAL 15.1/16.x dashboard. No HTML structure changes. */
+:root{color-scheme:dark;--bg:#060c17;--surface:#0c182a;--line:#244773;--txt:#f2f7ff}
+html,body{background:#060c17!important;color:#f2f7ff!important}
+#factoryDashboard,.factory-dashboard,.factory-dashmain,.factory-auth.dashboard-active{background:#060c17!important;color:#f2f7ff!important}
+#factoryDashboard .factory-sidebar{background:linear-gradient(180deg,#071222,#0b1728)!important;border-right:1px solid #183b62!important}
+#factoryDashboard .factory-sidebrand,#factoryDashboard .factory-sidebrand b{color:#35b6ff!important}
+#factoryDashboard .factory-topbar{background:#060c17!important;color:#dbeafe!important}
+#factoryDashboard .factory-hero{background:linear-gradient(112deg,#0d223e 0%,#102b4c 60%,#17365b 100%)!important;border:1px solid #25578c!important;box-shadow:0 10px 28px #0005!important}
+#factoryDashboard .factory-hero h1{color:#fff!important}
+#factoryDashboard .factory-picker,#factoryDashboard .factory-projects,#factoryDashboard .factory-sectiontitle{background:transparent!important}
+#factoryDashboard .factory-picker .package-card,#factoryDashboard .factory-picker .factory-package-pair>.package-card,#factoryDashboard .factory-projectempty,#factoryDashboard .factory-member{background:#101c30!important;color:#f1f7ff!important;border:1px solid #29456b!important;box-shadow:0 6px 22px #0004!important}
+#factoryDashboard .factory-picker .package-detail-btn{background:#142f52!important;color:#e0f2fe!important;border:1px solid #315f99!important}
+#factoryDashboard .factory-picker .package-card:first-child .package-detail-btn,#factoryDashboard #startSelectedPackage{background:linear-gradient(100deg,#007cf5,#8c1ee9)!important;color:#fff!important;border:0!important}
+#factoryDashboard .factory-picker .package-card.selected{outline:2px solid #38bdf8!important}
+#factoryDashboard .factory-sidebar button,#factoryDashboard .factory-sidebar a{color:#d8e9ff!important}
+#factoryDashboard .factory-sidebar button.active,#factoryDashboard .factory-sidebar a.active{background:linear-gradient(90deg,#0664da,#7b20d9)!important;color:#fff!important}
+#factoryDashboard .factory-sectiontitle h2,#factoryDashboard .factory-package-group-head h3{color:#f7fbff!important}
+#factoryDashboard .factory-hero p,#factoryDashboard .factory-sectiontitle span,#factoryDashboard .factory-footnote,#factoryDashboard .package-desc{color:#b9cee8!important}
+#factoryDashboard input,#factoryDashboard select,#factoryDashboard textarea{background:#0a1729!important;color:#f2f7ff!important;border:1px solid #2e5a8c!important}
+#capcutStudio,#capcutStudio .cap-main{background:#060c17!important;color:#f2f7ff!important}
+#capcutStudio .cap-side{background:#0b1729!important}
+#capcutStudio .cap-panel,#capcutStudio .cap-project,#capcutStudio .cap-file{background:#0e1b30!important;color:#f2f7ff!important;border:1px solid #27518a!important}
+#capcutStudio input,#capcutStudio textarea,#capcutStudio select{background:#09172a!important;color:#f2f7ff!important;border:1px solid #2b5d97!important}
+#capcutStudio .cap-create,#capcutStudio button.primary{background:linear-gradient(100deg,#087eff,#aa13d3)!important;color:#fff!important}
+@media(max-width:800px){#factoryDashboard .factory-hero{padding:20px!important}}

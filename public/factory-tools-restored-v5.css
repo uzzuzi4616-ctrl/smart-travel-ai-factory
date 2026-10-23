@@ -1,0 +1,12 @@
+/* Additive dashboard restoration: preserve package interactions and all existing JS. */
+#factoryDashboard .restored-tool-nav{display:block;padding:12px 13px;margin:3px 10px;border-radius:9px;text-decoration:none;color:#d9e9ff!important;font-size:13px;font-weight:700}
+#factoryDashboard .restored-tool-nav:hover{background:#18385c!important;color:#fff!important}
+#factoryDashboard .restored-feature-section{margin:28px 0 22px}
+#factoryDashboard .restored-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+#factoryDashboard .restored-feature{min-height:136px;display:flex;flex-direction:column;gap:12px;background:linear-gradient(135deg,#0d1c32,#101b30)!important;border:1px solid #2b5688;border-radius:15px;padding:20px;text-decoration:none!important;color:#f2f8ff!important;transition:transform .15s,border-color .15s}
+#factoryDashboard .restored-feature:hover{transform:translateY(-3px);border-color:#47b4ff}
+#factoryDashboard .restored-feature b{font-size:17px}
+#factoryDashboard .restored-feature small{font-size:12px;color:#aac8e9}
+#factoryDashboard .restored-feature span{font-size:12px;font-weight:800;color:#53baff;margin-top:auto}
+@media(max-width:1100px){#factoryDashboard .restored-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){#factoryDashboard .restored-feature-grid{grid-template-columns:1fr}}

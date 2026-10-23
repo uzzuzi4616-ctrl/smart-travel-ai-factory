@@ -1,0 +1,18 @@
+/* v38: high-priority dark mode for dashboard, editors and music pages */
+:root{color-scheme:dark;--dark-bg:#0b0d12;--dark-surface:#151a24;--dark-text:#f3f6ff;--dark-muted:#b9c5d7}
+html,body{background:#0b0d12!important;color:#f3f6ff!important}
+body .factory-dashboard,body .factory-dashmain,body .factory-topbar,body .factory-sidebar,body .factory-sectiontitle,body .factory-member,body .factory-picker,body .factory-group,body .factory-package-group,body .factory-hero,body .layout,body .main,body main.main,body .stage,body .content,body .top,body .footer,body .wrap,body .app-shell,body .app-grid,body .workspace,body .workspace-main{background-color:#0b0d12!important;color:#f3f6ff!important}
+body .factory-sidebar,body .side,body .side-nav,body aside{background:#10141d!important;color:#f3f6ff!important;border-color:#344053!important}
+body .factory-hero{background:linear-gradient(115deg,#14283e,#183a56)!important}
+body .factory-package-card,body .factory-packcard,body .factory-product,body .package-card,body .card,body .panel,body .box,body .prompt,body .notice,body .login-panel,body .login-section,body .auth-actions,body .publish-panel,body .seo-panel,body .seo-results,body .editor-toolbar,body .preview,body .link-check,body .source-row,body .factory-group-card,body .factory-dashmain .package-card{background:#171d29!important;color:#f3f6ff!important;border-color:#38465b!important}
+body h1,body h2,body h3,body h4,body h5,body label,body .package-title,body .factory-topbar,body .factory-sidebrand,body .factory-sectiontitle,body .factory-group-title,body .brand{color:#f3f6ff!important}
+body p,body small,body .muted,body .hint,body .package-desc,body .factory-topright,body .factory-sectiontitle span{color:#b9c5d7!important}
+body input:not([type=checkbox]):not([type=radio]),body textarea,body select{background:#202a39!important;color:#f3f6ff!important;border-color:#52627a!important}
+body input::placeholder,body textarea::placeholder{color:#a9b5c7!important}
+body .factory-nav.active,body .factory-nav:hover{background:#253550!important;color:#fff!important}
+body .factory-chips span{background:#243950!important;color:#e9f4ff!important}
+body .factory-package-group,body .factory-group{border-color:#46556c!important}
+body .package-card.selected{border-color:#329dff!important;background:#1d304b!important}
+body .auth-screen.factory-auth{background:#0b0d12!important}
+body #smart-language-widget{position:fixed!important;right:20px!important;top:80px!important;z-index:2147483640!important;display:flex!important;visibility:visible!important;opacity:1!important;background:#202b3c!important;color:#fff!important;border:1px solid #5a7396!important;border-radius:12px!important;padding:9px 12px!important}
+body #smart-language-widget select{background:#111a29!important;color:#fff!important;width:auto!important;min-width:125px!important}

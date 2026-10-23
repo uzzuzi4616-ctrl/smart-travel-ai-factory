@@ -1,0 +1,13 @@
+/* SMART TRAVEL AI FACTORY · shared global product banner V50 */
+html.staf-banner-open{scroll-padding-top:118px}
+body.staf-banner-open{padding-top:112px!important}
+#staf-global-banner{position:fixed;top:0;left:0;right:0;height:112px;z-index:2147483000;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,4vw,68px);color:#fff;background:linear-gradient(90deg,rgba(2,6,18,.98) 0%,rgba(3,8,27,.95) 38%,rgba(4,9,29,.56) 100%),url('/product-banner-santorini.webp') center 47%/cover no-repeat;border-bottom:1px solid rgba(92,161,255,.45);box-shadow:0 9px 30px rgba(0,0,0,.42);font-family:Arial,'Malgun Gothic',sans-serif}
+#staf-global-banner *{box-sizing:border-box}
+#staf-global-banner .staf-brand{font-size:clamp(16px,1.55vw,24px);font-weight:900;letter-spacing:-.5px;line-height:1.1;text-decoration:none;color:#fff;white-space:nowrap}
+#staf-global-banner .staf-brand b{background:linear-gradient(90deg,#00d4ff,#5b80ff,#f119cb);color:transparent;background-clip:text}
+#staf-global-banner .staf-description{font-size:12px;color:#cbd9f9;margin-top:7px;max-width:510px}
+#staf-global-banner .staf-actions{display:flex;align-items:center;gap:9px;flex-shrink:0}
+#staf-global-banner .staf-pill{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;min-height:39px;border:1px solid #425b87;border-radius:11px;background:rgba(6,14,33,.82);color:#fff;text-decoration:none;font-size:12px;font-weight:700;white-space:nowrap}
+#staf-global-banner .staf-pill.primary{background:linear-gradient(105deg,#078bff,#7d36f4,#ef13b3);border-color:transparent}
+#staf-global-banner .staf-dismiss{border:1px solid #486082;border-radius:50%;background:#08142b;color:white;width:31px;height:31px;font-size:20px;line-height:1;cursor:pointer}
+@media(max-width:780px){body.staf-banner-open{padding-top:102px!important}#staf-global-banner{height:102px;padding:10px 12px}#staf-global-banner .staf-description{font-size:10px}#staf-global-banner .staf-actions{gap:5px}#staf-global-banner .staf-pill{font-size:10px;padding:8px}#staf-global-banner .staf-pill.optional{display:none}#staf-global-banner .staf-brand{font-size:15px}}

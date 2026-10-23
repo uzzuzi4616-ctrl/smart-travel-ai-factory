@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SMART AI FACTORY | 리커버리 · 환경설정</title>
+<style>
+:root{font-family:system-ui,'Malgun Gothic',sans-serif;color:#e9f0ff;background:#080e1b}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex}aside{width:255px;background:#101a2d;border-right:1px solid #293752;padding:24px 16px;flex-shrink:0}a{color:inherit;text-decoration:none}.brand{display:block;font-size:17px;font-weight:850;color:#fff;line-height:1.45;margin-bottom:32px}.brand em{color:#60a5fa;font-style:normal}.navlabel{color:#879bbd;font-size:11px;font-weight:800;letter-spacing:1px;margin:22px 12px 9px}.nav{display:block;padding:13px 14px;border-radius:10px;color:#b9c8e4;font-size:14px;margin:5px 0}.nav:hover,.nav.active{background:#23395c;color:#fff}.nav.active{border-left:3px solid #60a5fa}main{flex:1;max-width:1400px;padding:36px 42px;margin:auto;width:100%}h1{font-size:30px;margin:0 0 10px}.muted{color:#91a4c3;font-size:14px;line-height:1.65}.pill{display:inline-block;padding:6px 12px;border-radius:50px;background:#142b39;color:#72e0c3;font-size:12px;font-weight:700;margin-bottom:15px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}.panel{background:#121e31;border:1px solid #293a58;border-radius:16px;padding:24px;box-shadow:0 10px 25px #0002}.panel h2{font-size:19px;margin:0 0 8px}.full{grid-column:1/-1}.field{margin-top:16px}label{display:block;font-size:13px;color:#c8d6ed;margin-bottom:8px}input,select{background:#0a1426;color:#f1f5ff;border:1px solid #38506f;border-radius:9px;padding:12px;width:100%;font:inherit}input[type=checkbox]{width:auto;accent-color:#38bdf8;margin-right:8px}button,.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 15px;background:#2563eb;color:white;border:0;border-radius:9px;cursor:pointer;font-weight:700;font-size:13px;margin:10px 7px 0 0}button:hover{filter:brightness(1.15)}.secondary{background:#344764}.danger{background:#a33446}.outline{background:transparent;border:1px solid #426084}.notice{background:#192b3f;border:1px solid #365471;border-radius:11px;padding:14px;color:#bbd3ed;line-height:1.6;font-size:13px;margin-top:16px}.warning{background:#382718;border-color:#72502d;color:#f8d49a}.status{margin-top:18px;padding:14px;border-radius:10px;background:#112f2a;color:#8ef0c6;display:none}.history{padding-left:20px;color:#c1d1e7;line-height:2;font-size:13px}.badge{color:#ffd58a;font-size:12px}.file{display:none}@media(max-width:900px){body{display:block}aside{width:auto}main{padding:24px 16px}.grid{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<aside>
+<a class="brand" href="/">🌐 SMART AI <em>FACTORY</em><br><small style="font-size:11px;color:#8ba3c9">GLOBAL ADMIN CENTER</small></a>
+<div class="navlabel">WORKSPACE</div>
+<a class="nav" href="/">🏠 메인 상품 페이지</a><a class="nav" href="/admin.html">📊 관리자 대시보드</a>
+<div class="navlabel">SYSTEM MANAGEMENT</div><a class="nav active" href="/recovery.html">🔄 리커버리 · 환경설정</a>
+</aside>
+<main>
+<span class="pill">● SETTINGS CENTER · LOCAL MODE</span>
+<h1>🔄 리커버리 · 환경설정</h1>
+<p class="muted">SMART AI FACTORY 운영 환경설정을 관리하고, 설정 파일을 백업하거나 이전에 저장한 값으로 복원합니다.</p>
+<div class="notice warning">⚠️ 이 페이지는 <b>브라우저 설정만</b> 저장·복원합니다. 서버 소스, 회원 DB, 결제 기록을 백업하거나 복구하지 않습니다. 공개 서버에 배포하기 전에 반드시 서버 측 관리자 인증 및 접근 통제가 필요합니다.</div>
+<div class="grid">
+<section class="panel"><h2>⚙️ 기본 환경설정</h2><p class="muted">이 브라우저에 설정값을 저장합니다.</p>
+<div class="field"><label for="serviceName">서비스 이름</label><input id="serviceName" maxlength="100" value="SMART AI FACTORY"></div>
+<div class="field"><label for="adminEmail">관리자 알림 이메일</label><input id="adminEmail" type="email" placeholder="admin@example.com"></div>
+<div class="field"><label for="language">관리자 언어</label><select id="language"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option></select></div>
+<div class="field"><label for="backupInterval">백업 안내 주기</label><select id="backupInterval"><option value="daily">매일</option><option value="weekly">매주</option><option value="monthly">매월</option></select></div>
+<div class="field"><label><input id="securityAlerts" type="checkbox" checked> 보안 알림 사용 (설정만 저장)</label></div>
+<button id="save">💾 환경설정 저장</button><button id="revert" class="secondary">↶ 마지막 저장값 복원</button>
+</section>
+<section class="panel"><h2>📦 설정 백업 및 복원</h2><p class="muted">JSON 파일로 내보내거나, 이전에 내보낸 설정 파일을 다시 가져올 수 있습니다.</p>
+<button id="export">⬇ 설정 백업 다운로드</button><button id="importBtn" class="secondary">⬆ 설정 파일 가져오기</button><input class="file" id="importFile" type="file" accept=".json,application/json">
+<div class="notice">복원 전에 파일 내용을 확인하며, 기존 설정을 덮어쓸 때 확인창이 표시됩니다. 백업 파일에는 비밀번호·결제키·API 키를 저장하지 마세요.</div>
+<h2 style="margin-top:28px">🧹 기본값 복원</h2><p class="muted">현재 브라우저에 저장된 환경설정만 기본값으로 되돌립니다.</p>
+<button id="reset" class="danger">↻ 기본 설정으로 초기화</button>
+</section>
+<section class="panel"><h2>📝 설정 변경 기록</h2><p class="muted">이 브라우저에서 수행한 최근 작업입니다.</p><ul id="history" class="history"></ul></section>
+<section class="panel"><h2>🛡️ 서버 복구 센터</h2><span class="badge">서버 연동 전 · 준비 중</span><p class="muted">실제 서버 파일·데이터베이스 복구는 관리자 인증, 서버 측 백업 저장소, 복구 API, 복원 전 검증이 필요합니다.</p><button disabled class="outline" style="opacity:.45;cursor:not-allowed">🔒 서버 전체 복구 (미연결)</button><button disabled class="outline" style="opacity:.45;cursor:not-allowed">🔒 회원 DB 복원 (미연결)</button></section>
+</div><div id="status" class="status" role="status" aria-live="polite"></div>
+</main>
+<script>
+(()=>{'use strict';
+const KEY='smart_factory_recovery_settings_v2', LOG='smart_factory_recovery_log_v2';
+const defaults={serviceName:'SMART AI FACTORY',adminEmail:'',language:'ko',backupInterval:'weekly',securityAlerts:true};
+const $=id=>document.getElementById(id);
+const valid=x=>x&&typeof x==='object'&&!Array.isArray(x)&&typeof x.serviceName==='string'&&x.serviceName.length<=100&&typeof x.adminEmail==='string'&&x.adminEmail.length<=254&&['ko','en','ja'].includes(x.language)&&['daily','weekly','monthly'].includes(x.backupInterval)&&typeof x.securityAlerts==='boolean';
+function read(){try{const v=JSON.parse(localStorage.getItem(KEY));return valid(v)?v:{...defaults}}catch{return {...defaults}}}
+function form(){return{serviceName:$('serviceName').value.trim(),adminEmail:$('adminEmail').value.trim(),language:$('language').value,backupInterval:$('backupInterval').value,securityAlerts:$('securityAlerts').checked}}
+function fill(v){for(const k of ['serviceName','adminEmail','language','backupInterval'])$(k).value=v[k];$('securityAlerts').checked=v.securityAlerts}
+function msg(t){$('status').textContent=t;$('status').style.display='block'}
+function logs(){try{const x=JSON.parse(localStorage.getItem(LOG));return Array.isArray(x)?x.slice(0,10):[]}catch{return []}}
+function draw(){const el=$('history');el.replaceChildren();const list=logs();if(!list.length){const li=document.createElement('li');li.textContent='기록이 없습니다.';el.append(li)}for(const item of list){const li=document.createElement('li');li.textContent=item;el.append(li)}}
+function record(t){try{localStorage.setItem(LOG,JSON.stringify([new Date().toLocaleString('ko-KR')+' · '+t,...logs()].slice(0,10)))}catch{}draw()}
+function persist(v){localStorage.setItem(KEY,JSON.stringify(v));fill(v)}
+$('save').onclick=()=>{const v=form();if(!v.serviceName){msg('서비스 이름을 입력해 주세요.');return}if(v.adminEmail&&!$('adminEmail').checkValidity()){msg('이메일 주소 형식을 확인해 주세요.');return}try{persist(v);record('환경설정 저장');msg('✅ 이 브라우저에 설정이 저장되었습니다.')}catch{msg('저장할 수 없습니다. 브라우저 저장소를 확인해 주세요.')}};
+$('revert').onclick=()=>{fill(read());record('마지막 저장값 불러오기');msg('↶ 마지막 저장된 설정을 불러왔습니다.')};
+$('reset').onclick=()=>{if(!confirm('이 브라우저의 환경설정을 기본값으로 초기화할까요?'))return;try{persist({...defaults});record('기본 설정 초기화');msg('기본 설정으로 초기화했습니다.')}catch{msg('초기화에 실패했습니다.')}};
+$('export').onclick=()=>{const obj={type:'SMART_AI_FACTORY_SETTINGS',version:1,exportedAt:new Date().toISOString(),settings:read()};const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='smart-ai-factory-settings-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);record('설정 JSON 백업 다운로드');msg('설정 백업 파일을 다운로드했습니다.')};
+$('importBtn').onclick=()=>$('importFile').click();
+$('importFile').onchange=async e=>{const file=e.target.files?.[0];e.target.value='';if(!file)return;if(file.size>100000){msg('설정 파일은 100KB 이하여야 합니다.');return}try{const obj=JSON.parse(await file.text());if(obj.type!=='SMART_AI_FACTORY_SETTINGS'||obj.version!==1||!valid(obj.settings))throw Error('형식 오류');if(!confirm('현재 브라우저 설정을 백업 파일의 값으로 덮어쓸까요?'))return;persist(obj.settings);record('설정 JSON 파일 복원');msg('✅ 설정 파일을 복원했습니다.')}catch{msg('올바른 SMART AI FACTORY 설정 백업 JSON 파일이 아닙니다.')}};
+fill(read());draw();
+})();
+</script>
+</body></html>

@@ -1,0 +1,16 @@
+/* Shorts template: premium all-black theme, scoped by body class */
+html,body{background:#000!important;color:#f5f7fc!important;min-height:100%}
+aside{background:#030303!important;border-right:1px solid #292b31!important}
+main{background:#000!important;min-height:100vh!important}
+.panel,section.panel,.grid>div,.card{background:#090909!important;border:1px solid #30333b!important;color:#fff!important;border-radius:14px!important}
+.panel h2,.panel label,h1,h2{color:#fff!important}
+input,textarea,select{background:#18191c!important;color:#fff!important;border:1px solid #363941!important;border-radius:8px!important}
+input:focus,textarea:focus,select:focus{outline:2px solid #527bff!important;outline-offset:1px}
+#tplPreview{background:#000;border:1px solid #4a4f5c;color:#fff}
+#templateCards button:not(.primary){background:#202127;color:#fff;border:1px solid #343842}
+#templateCards button:hover,.nav:hover{border-color:#597eff!important}
+#flowInfo,.muted{color:#a9b4c7!important}
+.nav.active{background:#1a1b20!important;color:#fff!important}
+button.primary,.primary{background:linear-gradient(95deg,#397af9,#d53a9f)!important;color:#fff!important;border:0!important}
+button:hover{filter:brightness(1.13)}
+@media(max-width:860px){aside{position:relative;width:100%;height:auto}main{margin-left:0!important;padding:20px!important}.row{flex-wrap:wrap}}
